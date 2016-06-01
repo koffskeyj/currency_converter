@@ -12,7 +12,7 @@ class Money:
         if self.currency_type == "EUR":
             return self.amount * 1.11369
         if self.currency_type == "BTC":
-            return self.amount * .00187265
+            return self.amount * 520.011
 
     def __str__(self):
         return "{} , {}".format(self.amount, self.currency_type)
@@ -54,6 +54,7 @@ print("USD < EUR: ", USD < EUR)
 print("USD * JPY: ", USD * JPY)
 print("USD + BTC: ", USD + BTC)
 print("USD - EUR: ", USD - EUR)
+# print(Money(100.00, "USD") + Money(56.32, "EUR") + Money(1.2, "BTC") + Money(8, "USD"))
 
 print(JPY.converter())
 print(EUR.converter())
